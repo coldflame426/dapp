@@ -1,0 +1,16 @@
+@import "styles/_variables.scss";
+
+.container {
+  position: relative;
+
+  .account {
+    border: 1px solid $gray;
+    border-radius: 15px;
+    font-size: $fontSizeSmall;
+    font-weight: $fontWeightMedium;
+    padding: 5px 10px 6px;
+    position: absolute;
+    right: 20px;
+    top: 0;
+  }
+}

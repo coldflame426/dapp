@@ -1,0 +1,61 @@
+@import "styles/_variables.scss";
+
+.container {
+  line-height: 24px;
+  margin: 50px auto 0;
+  max-width: 350px;
+
+  h2 {
+    font-size: $fontSizeLarge;
+  }
+
+  > p {
+    font-size: $fontSizeSmall;
+    font-weight: $fontWeightMedium;
+  }
+
+  .price {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    label {
+      color: $gray;
+      font-size: $fontSizeLarge;
+      font-weight: $fontWeightBold;
+      line-height: 30px;
+    }
+  }
+
+  .supply {
+    font-size: $fontSizeSmall;
+    margin-bottom: 10px;
+
+    label {
+      font-weight: $fontWeightMedium;
+    }
+  }
+
+  .selectBox {
+    text-align: left;
+    margin-bottom: 20px;
+
+    label {
+      display: block;
+      font-size: $fontSizeSmall;
+    }
+
+    select {
+      border: 2px solid $primary;
+      border-radius: 10px;
+      font-size: $fontSizeSmall;
+      height: 45px;
+      outline: none;
+      padding-left: 10px;
+      width: 100%;
+    }
+  }
+
+  .numberPicker {
+    margin-bottom: 20px;
+  }
+}

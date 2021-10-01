@@ -1,0 +1,55 @@
+@import "styles/_variables.scss";
+
+.container {
+  line-height: 24px;
+  margin: 50px auto 0;
+  max-width: 600px;
+
+  h2 {
+    font-size: $fontSizeLarge;
+  }
+
+  > p {
+    margin-bottom: 50px;
+  }
+
+  > div {
+    color: $gray;
+    margin: 20px auto 0;
+    max-width: 350px;
+    text-align: left;
+
+    .badge {
+      align-items: center;
+      background-color: $white;
+      border: 2px solid $primary;
+      border-radius: 100%;
+      color: $primary;
+      display: inline-flex;
+      font-weight: $fontWeightBold;
+      height: 34px;
+      justify-content: center;
+      margin-right: 15px;
+      width: 34px;
+    }
+
+    &.active {
+      color: $primary;
+
+      .badge {
+        background-color: $primary;
+        border-radius: 100%;
+        color: $white;
+      }
+    }
+
+    .connect {
+      color: $gray;
+      margin-left: 50px;
+
+      p {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
