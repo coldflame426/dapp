@@ -12,7 +12,7 @@ Build an intuitive dApp that connects with MetaMask for buying the NFT. Feel fre
 
 #### Submission
 
-Please create a feature branch for your work and when complete open a pull request, tagging gitlab user `calvinh8`, `felipeaugusto1`, and `bonnevoyager` as the reviewers. 
+Please create a feature branch for your work and when complete open a pull request, tagging gitlab user `calvinh8`, `felipeaugusto1`, and `bonnevoyager` as the reviewers.
 
 #### Timeline
 
@@ -52,3 +52,29 @@ If you have time, write your own smart smart contracts for the dApp.
 
 StormX Shrug NFT Smart Contracts: (https://github.com/stormxio/nft-shrug)[https://github.com/stormxio/nft-shrug]
 StormX Shrug NFT dApp: (https://nft.stormx.io/)[https://nft.stormx.io/]
+
+## How to Test
+
+#### Web
+
+- Deployed web frontend to https://stormx-test.surge.sh
+
+- Test Locally
+
+1. Clone this repository
+2. run `cd web`
+3. run `yarn`
+4. web server should be running at `http://localhost:3000`
+
+\*\* Detailed technical instructions can be found in web/readme.md
+
+#### Mobile
+
+1. Clone this repository.
+2. run `cd mobile`
+3. run `yarn`
+4. run `yarn ios` or `yarn android` (Should attach your real iPhone/iPad for the iOS test)
+5. App should be running on your emulator.
+6. Pressing on `Open dapp` should navigate to your Metamask if installed, and open a dapp (which is deployed to https://stormx-test.surge.sh for testing purposes) through an in-app browser. If Metamask is not installed, it will open a Metamask installation page on the App Store or Google Play Store.
+
+\*\* Detailed technical instructions can be found in mobile/readme.md
