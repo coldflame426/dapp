@@ -78,3 +78,8 @@ StormX Shrug NFT dApp: (https://nft.stormx.io/)[https://nft.stormx.io/]
 6. Pressing on `Open dapp` should navigate to your Metamask if installed, and open a dapp (which is deployed to https://stormx-test.surge.sh for testing purposes) through an in-app browser. If Metamask is not installed, it will open a Metamask installation page on the App Store or Google Play Store.
 
 \*\* Detailed technical instructions can be found in mobile/readme.md
+
+
+## Known issue
+
+- On the dapp, if you switch to the StormX token as the payment option, there's an error to get the NFT price which makes it impossible to purchase NFT using StormX tokens. I assume there's an error in the getPrice method (https://github.com/stormxio/nft-shrug/blob/1b8e1e6323cedb12b449fdc5c7b257cc89fe765d/contracts/sale/ShrugSale.sol#L195) of a Sale smart contract which is deployed to Rinkeby Test Network. Love to talk more about this issue to debug.
